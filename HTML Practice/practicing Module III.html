@@ -1,26 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
-</head>
-<body>
-    <h2>Learning about Hiperlinks</h2>
-    <a href="../HTML Module II/index.html" target="_blank">View Full Recipe </a>
-    <br>
-    <a href="mailto:security-noreply@linkedin.com" target="_parent">Send a Email us</a>
-    <hr>
-    <a href="https://www.example.com" target="_blank">
-    <img src="/uploads/media/default/0001/03/mountain_landscape.jpg" alt="Mountain landscape" width="340" heigh
-    t="250">
+  </head>
+  <body>
+   
+   <!--Learning about Forms and its features-->
+   <br>
+   <form action="#" method="post">
+  <label for="email">Email: </label>
+  <input type="email" id="email" required>
+  <br>
+  <label for="passw">Password: </label>
+  <input type="password" id="passw" minlength="8" pattern="[a-z][A-Z][0-9]" required>
+  <br>
+  <button type="submit">Submit</button>
+  <button type="button" onclick="">Reset</button>
+   
+  <p>Choose your meal preference:</p>
+  <label for="vegetarian">Vegetarian</label>
+  <input type="radio" id="vegetarian" name="meal" value="vegetarian" required>
+  <label for="non-vegetarian">Non-Vegetarian</label>
+  <input type="radio" id="non-vegetarian" name="meal" value="non-vegetarian" required>
+  <br>
+  
+  <p>Select the workshops you'd like to attend:</p>
+  <label for="workshop1">Workshop 1</label>
+  <input type="checkbox" id="workshop1" name="workshop1">
+  <label for="workshop2">Workshop 2</label>
+  <input type="checkbox" id="workshop2" name="workshop2">
+  <label for="workshop3">Workshop 3</label>
+  <input type="checkbox" id="workshop3" name="workshop3">
+  <br>
+  
+ </form>
 
-    <br>
-    <h2>Learning about Videos</h2>
-    <video src="https://www.youtube.com/shorts/7L-l2U6FqI4" controls autoplay>
-   Your browser does not support the video tag.
-</video>
-
-</a>
-</body>
+  </body>
 </html>
