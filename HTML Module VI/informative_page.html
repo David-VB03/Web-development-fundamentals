@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Your World</title>
+    <link
+      rel="icon"
+      href="https://edube.org/uploads/media/default/0001/04/web-favicon.png"
+      type="image/png"
+    /> 
+     <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>
+      Discover Your World
+      <!-- Task 3: Add an emoji here --> &#x1f30d;
+    </h1>
+    <p>
+      Click the button to learn about the continent you're on and some famous
+      geographical features.
+    </p>
+    <!-- Task 4: Add a button for displaying geolocation information here -->
+       <button id="getLocation">Discover Location</button>
+    <img
+      src="https://edube.org/uploads/media/default/0001/04/continents.jpg"
+      usemap="#image-map"
+      alt="World Map"
+    />
+    <map name="image-map">
+      <!-- Task 5: Add area tags for continents here -->
+        <area shape="rect" coords="386,283,41,17" href="javascript:void(0);" alt="North America" id="north-america" >
+        <area shape="rect" coords="209,501,358,288" href="javascript:void(0);" alt="South America" id="south-america">
+        <area shape="rect" coords="391,68,505,217" href="javascript:void(0);" alt="Europe" id="europe">
+        <area shape="rect" coords="533,217,387,448" href="javascript:void(0);"  alt="Africa" id="africa">
+        <area shape="rect" coords="893,153,506,1" href="javascript:void(0);" alt="Asia" id="asia">
+          <area shape="rect" coords="679,353,872,480" href="javascript:void(0);"  alt="Australia and Oceania" id="australia-and-oceania">
+    </map>
+
+     <iframe sandbox="" src="" frameborder="0" allowfullscreen></iframe>
+  </body>
+</html>
