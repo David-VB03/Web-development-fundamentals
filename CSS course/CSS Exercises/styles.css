@@ -1,0 +1,24 @@
+[class*="question"]{
+    color: red;
+    font-style: oblique;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button_content{
+    background-color: blue;
+    color: white;
+}
+.button_content:hover{
+    color: rgb(27, 10, 10);
+    background-color: rgb(255, 255, 255);
+    outline: none;
+}
+.user_name{
+   color: rgb(2, 70, 70);
+   background-color: orange;
+  padding: 10px;
+}
+.user_name:focus{
+  background-color: black;
+   color: rgb(187, 184, 184);
+}
