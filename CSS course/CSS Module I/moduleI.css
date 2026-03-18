@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Base Styles*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+h1{
+    color: green !important;
+}
+
+h2{
+    color: black;
+}
+p{
+    color: red;
+}
+ /*Header Styles*/
+
+header{
+
+    background-color: #333333;
+    padding: 20px;
+     text-align: center;
+}
+  header + main{
+    border-top: 5px rgb(134, 134, 134) solid;
+  }
+
+#header{
+border-bottom: 2px rgb(231, 140, 3) solid;
+
+}
+#header h1{
+    color: orange !important;
+}
+.highlight{
+    color: orange;
+    padding: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+  
+/*Select Selector*/
+
+
+  /*ID Selecetors */
+
+
+
+  /*Section Styles*/
+ section{
+    margin: 20px;
+ }
+
+
+   /*Footer Styles*/
+
+   footer{
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+   }
+   [href^="mailto:"]{
+    color: orange;
+   }
+
+
+  a:hover{
+    color: white;
+  }
+
+  p::first-line{
+    font-weight: bold;
+  }
+
+
+ 
