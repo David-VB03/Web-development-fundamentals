@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.card{
+    width: 600px;
+    padding: 15px 10px;
+    margin: auto;
+    background-color: rgb(151, 201, 149);
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 1px 3px 5px 6px rgba(4, 4, 83, 0.623);
+}
+
+h2
+{
+    font-style: italic;
+   font-family: Times, 'Times New Roman', serif;   
+   margin-bottom: 5px;
+   color: whitesmoke;
+   text-shadow: 4px 3px 5px rgba(77,2,94,0.86);
+ }
+ p{
+    line-height: 1.2;
+    
+ }
