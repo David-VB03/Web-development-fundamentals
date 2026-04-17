@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.typing-text {
+
+   margin: 15px;
+   overflow: hidden;
+   white-space: nowrap;
+   animation-name: typing-animation;
+   animation-timing-function: steps(50 , end);
+   animation-duration: 7s;
+   animation-iteration-count: infinite;
+  
+   
+    }
+
+@keyframes  typing-animation {
+  
+  from{
+    width:0% ;
+  }
+
+  to{
+    width: 100%;
+  }
+
+}
+
+
+/*
+@keyframes boxVisible {
+ from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+@keyframes rotateBox {
+  from{
+     transform: rotate(0deg);
+  }
+  to{
+     transform: rotate(360deg);
+  }
+}
+
+
+@keyframes moveBox {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(600px - 150px));
+  }
+}
+*/
