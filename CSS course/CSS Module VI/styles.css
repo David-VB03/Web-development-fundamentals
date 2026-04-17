@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  text-align: center;
+  background-color: #333;
+  box-sizing: border-box;
+
+}
+
+header > h1 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  color: rgba(255, 255, 255, 0.801);
+  font-style: italic;
+  text-decoration: dashed;
+ 
+}
+
+header.loaded > h1 {
+  opacity: 1;
+}
+
+main {
+  background-color: lightgray;
+}
+main > section {
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.product-image {
+  animation-name: rotate_image;
+  margin: 0 auto;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+}
+
+.buy-now {
+  color: rgb(255, 255, 255);
+  font-style: oblique;
+  background-color: black;
+  padding: 10px;
+  border: none;
+  margin: 0 auto;
+  transition: background-color 0.4s ease;
+  animation-iteration-count: 1;
+  
+}
+.buy-now:hover {
+  color: rgb(236, 229, 229);
+  background-color: rgb(26, 114, 77);
+  animation-name: scale_button;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+}
+.features{
+  max-width: 100%;
+  overflow-x: hidden;
+  
+}
+
+.feature-item{
+ 
+    animation-name: translate_item;
+     animation-direction: normal;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+     /* Optional styling */
+    padding: 10px 15px;
+    margin: 10px 0;
+    background: #f0f0f0;
+    border-radius: 7px;
+    list-style: none; /* Removes default bullet points */
+    opacity: 0;
+}
+
+footer{
+   background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.feature-item:nth-child(2){
+  animation-delay: 0.5s;
+}
+
+
+.feature-item:nth-child(3){
+  animation-delay: 1s;
+}
+
+
+@keyframes translate_item {
+    from{
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+@keyframes rotate_image {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale_button {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes opacity_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
