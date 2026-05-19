@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial,sans-serif;
+     color: #333;
+     background-color: #f4f4f4;
+     font-size: 16px;
+}
+
+header{
+    max-width: 100%;
+    background-color: #333;
+}
+nav{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navigation-menu{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    
+}
+.navigation-menu li{
+    margin: 10px;
+}
+.navigation-menu a{
+        color: white;
+      text-decoration: none;
+      font-size: 18px;
+}
+.navigation-menu a:hover{
+      text-decoration: underline;
+}
+
+main{
+    padding: 20px;
+}
+section{
+    margin: 20px 0;
+}
+section > p{
+    line-height: 1.6;
+}
+h1,h2{
+    color: #0654b3;
+}
+
+#trivia .card{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 20px 0;
+    
+}
+#trivia img{
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+#categories ,#contact{
+    padding: 20px;
+}
+#categories ul{
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+
+
+}
+#categories a{
+     margin: 10px;    
+     color: #0654b3;
+     text-decoration: none;
+}
+
+#categories a:hover{
+     text-decoration: underline;
+}
+#scores{
+    padding: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+ thead > tr {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+}
+form input,label{
+    margin-top: 10px;
+    padding: 10px;
+
+}
+form button{
+    border-style: none;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: #297adf;
+}
+form button:hover{
+    background-color: #0654b3;
+}
+#subscribe{
+    text-align: center;
+}
+#subscribe button{
+    width: auto;
+    height: 30px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    letter-spacing: 1.2px;
+    line-height: 1.5px;
+    background-color: rgb(2, 161, 2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+     font-size: 20px;
+    cursor: pointer;
+}
+
+#subscribe button:hover{
+    background-color: rgb(1, 32, 1);
+      animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    
+    animation-iteration-count: infinite;
+   
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 12px 6px;
+    color: white;
+    font-weight: bold;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer p{
+   margin: 15px 0;
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+         opacity: 1;
+    }
+    50%{
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width:510px){
+   
+    .navigation-menu{
+        width: 100%;
+        flex-direction: column;
+        padding: 5px 0;
+        text-align: center;
+    }
+    .navigation-menu li{
+        border: 1px solid black;
+    }
+}
